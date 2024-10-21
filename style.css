@@ -1,0 +1,76 @@
+body {
+  margin: 80vh 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  /* Improves text readability */
+  background-color: #f5f5f5;
+  /* Soft background for a cleaner look */
+}
+
+.scrolling-text {
+  transition: text-align 0.3s ease;
+  /* Focus transition on text alignment */
+  font-size: 20px;
+  margin: 10px 10px 0 0;
+}
+
+
+/* Text alignment classes */
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* Triangle indicator positioning */
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid black;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  /* Positioned within the container */
+  right: 0;
+  z-index: 1;
+  transition: all 0.3s ease, right ;
+  /* Smooth transition for triangle movement */
+}
+
+.top {
+  top: 0;
+  right: 0;
+  position: absolute;
+  /* Relative to container */
+}
+
+.center {
+  right: 10px;
+  position: fixed;
+  /* Fixed to the viewport for the "halfway" effect */
+  top: 50%;
+  transform: translateY(-50%);
+  /* Perfect vertical centering */
+}
+
+.bottom {
+  right: 0;
+  bottom: 5px;
+  position: absolute;
+  /* Relative to container */
+}
+
+/* Aesthetic improvements for a cleaner look */
+.scroll-container {
+  margin: 0 10px;
+  position: relative;
+  background-color: white;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 10px 20px 10px;
+  border-radius: 8px;
+}
